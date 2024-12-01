@@ -9,6 +9,7 @@
     <title>Finance Constellations</title>
 </head>
 <body>
+    <div id="overlay"></div>
     <section class="start">
         <section>
             <div class="header">
@@ -36,7 +37,7 @@
             <div class="texts">
                 <p>Welcome to Finance Constellations an SIMULATION of an finance manager</p>
             </div>
-            <button class="secondary-button open-list" id="open-list">See list of false accounts</button>
+            <button class="secondary-button open-list" id="open-list" onclick="handleOpenListClick()">See list of false accounts</button>
             <form class="log-in-form">
                 <h1>LOG-IN</h1>       
                 <span>Username: <input type="text" id="user-name" name="user-name"></span>
@@ -53,9 +54,28 @@
                 <li>Username: UltraMegaGamer; Password: 331244</li>
                 <li>Username: Gabriel; Password: asddd2221</li>
             </ul>
-            <button class="close-list">close</button>
+            <button class="close-list secondary-button" id="close-list" onclick="handleCloseListClick()">close</button>
         </div>
     </section>
-    <script src="./public/index.ts"></script>
+    <script src="./public/index.js"></script>
+    <section id="foot">   
+        <div class="footer"> 
+            <section id="customize">
+                <article class="customize-article">
+                    <label for="bg-theme">Theme: </label>
+                    <select name="bg-theme" id="bg-theme">
+                        <option value="normal" selected>Normal</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </article>
+            </section>        
+            <p>this is not REAL, this is an SIMULATOR, for educational and simulating purposes. DO NOT use for real things.</p>
+            <h1>finance constellations</h1>
+            <div class="contact-us">
+                <p>Contact us: <span> <br>Tel: +placeholder placeholder <br>Email: placeholder@placeholder.com</span></p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
