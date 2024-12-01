@@ -1,6 +1,9 @@
 :root {
     --bg-def-color: rgb(40, 39, 44);
     --p-text-color: rgb(190, 190, 190);
+    --input-def-bg-color: rgb(81, 71, 107);
+    --input-def-txt-color:rgb(230, 230, 230);
+    --txt-def-color: white;
 }
 
 body {
@@ -15,6 +18,15 @@ body {
 
 p {
     color: var(--p-text-color);
+}
+
+input {
+    background-color: var(--input-def-bg-color);
+    color: var(--input-def-txt-color);
+    border: 0;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* PRIMARY-BUTTON */
@@ -230,6 +242,16 @@ p {
     z-index: 2;
     padding: 20px;
     border-radius: 16px;
+    color: white;
 }
 
 /* LIST */
+
+.open-list {
+    grid-column-start: 2;
+    margin-top: 40px;
+}
+
+.list-of-false-accounts {
+    display: none;
+}

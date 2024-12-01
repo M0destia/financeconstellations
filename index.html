@@ -36,15 +36,15 @@
             <div class="texts">
                 <p>Welcome to Finance Constellations an SIMULATION of an finance manager</p>
             </div>
+            <button class="secondary-button open-list" id="open-list">See list of false accounts</button>
             <form class="log-in-form">
-                <h1>LOG-IN</h1>
-                <button class="secondary-button open-list">See list of false accounts</button>
+                <h1>LOG-IN</h1>       
                 <span>Username: <input type="text" id="user-name" name="user-name"></span>
                 <span>Password: <input type="password" id="password" name="password"></span>
                 <button type="submit" class="primary-button">LOG</button>
             </form>
         </section>
-        <div class="list-of-false-accounts">
+        <div class="list-of-false-accounts" id="list-of-false-accounts">
             <h1>List of false accounts</h1>       
             <ul>
                 <li>Username: Jonathan; Password: 03122001</li>
@@ -56,5 +56,6 @@
             <button class="close-list">close</button>
         </div>
     </section>
+    <script src="./public/index.ts"></script>
 </body>
 </html>
