@@ -5,6 +5,7 @@
     --input-def-txt-color:rgb(230, 230, 230);
     --txt-def-color: white;
     --def-footer-bg-color: rgb(20, 19, 26);
+    --log-def-color: rgb(26, 24, 29);
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     background-color: var(--bg-def-color);
     font-family: 'Helvetica', 'Arial', -apple-system, sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 
 /* GENERAL */
@@ -208,7 +210,7 @@ input {
 .log-in-form {
     width: clamp(250px, 2vw, 650px);
     height: clamp(250px, 2vw, 650px);
-    background-color: rgb(26, 24, 29);
+    background-color: var(--log-def-color);
     grid-column-start: 2;
     display: flex;
     flex-direction: column;
@@ -221,7 +223,7 @@ input {
     z-index: 2;
     padding: 20px;
     border-radius: 16px;
-    color: white;
+    color: var(--txt-def-color);
 }
 
 /* LIST */
@@ -279,6 +281,7 @@ input {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30px auto;
     text-align: center;
+    position: relative;
 
     container-name: foot;
     container-type: inline-size;
